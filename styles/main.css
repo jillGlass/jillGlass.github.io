@@ -29,7 +29,7 @@ li a.active {
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: stretch;
   justify-content: space-evenly;
   height: 600px;
@@ -38,7 +38,6 @@ li a.active {
 .column-1 {
   display: grid;
   background-color: #f78888;
-  font-size: 3em;
   align-items: center;
   padding: 8px;
   flex-grow: 1;
@@ -47,7 +46,6 @@ li a.active {
 .column-2 {
   display: grid;
   background-color: #90ccf4;
-  font-size: 3em;
   align-items: center;
   padding: 8px;
   flex-grow: 1;
@@ -56,18 +54,21 @@ li a.active {
 .column-3 {
   display: grid;
   background-color: #f3d250;
-  font-size: 3em;
   align-items: center;
   padding: 8px;
   flex-grow: 1;
 }
 
 .title {
-  height: 150px;
-  width: 150px;
+  font-size: 3em;
+  padding: 0;
 }
 
 .image {
   height: 150px;
   width: 150px;
+}
+
+.intro {
+  font-size: 1em;
 }
