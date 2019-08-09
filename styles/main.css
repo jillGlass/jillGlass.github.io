@@ -28,47 +28,51 @@ li a.active {
 }
 
 .container {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: space-evenly;
-  height: 600px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .column-1 {
   display: grid;
   background-color: #f78888;
   align-items: center;
-  padding: 8px;
-  flex-grow: 1;
+  justify-items: center;
+  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] 100vh [end];
 }
 
 .column-2 {
   display: grid;
   background-color: #90ccf4;
   align-items: center;
-  padding: 8px;
-  flex-grow: 1;
+  justify-items: center;
+  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] 100vh [end];
 }
 
 .column-3 {
   display: grid;
   background-color: #f3d250;
   align-items: center;
-  padding: 8px;
-  flex-grow: 1;
+  justify-items: center;
+  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] 100vh [end];
 }
 
 .title {
-  font-size: 3em;
+  display: inline;
+  font-size: 3.5em;
   padding: 0;
+  justify-items: center;
 }
 
 .image {
-  height: 150px;
-  width: 150px;
+  display: inline-grid;
+  height: 100;
+  width: auto;
+  justify-items: center;
 }
 
 .intro {
+  display: inline-grid;
   font-size: 1em;
+  justify-items: center;
 }
