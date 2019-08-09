@@ -4,7 +4,7 @@ body {
 }
 
 p {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .navigation {
@@ -29,7 +29,7 @@ li a.active {
 
 .container {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -38,7 +38,7 @@ li a.active {
   background-color: #f78888;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] 100vh [end];
+  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] auto [end];
 }
 
 .column-2 {
@@ -46,7 +46,7 @@ li a.active {
   background-color: #90ccf4;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] 100vh [end];
+  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] auto [end];
 }
 
 .column-3 {
@@ -54,7 +54,7 @@ li a.active {
   background-color: #f3d250;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] 100vh [end];
+  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] auto [end];
 }
 
 .title {
