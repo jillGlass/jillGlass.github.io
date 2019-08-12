@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+#showcase {
+  background-color: #efe2ba;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.section-a {
+  display: grid;
+  background-color: #f78888;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: [title] 120px [intro] 60px [image] 290px[end];
+  grid-template-columns: 1fr;
+}
+
+.section-b {
+  display: grid;
+  background-color: #90ccf4;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: [title] 120px [intro] 60px [image] 290px[end];
+  grid-template-columns: 1fr;
+}
+
+.section-c {
+  display: grid;
+  background-color: #f3d250;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: [title] 120px [intro] 60px [image] 290px[end];
+  grid-template-columns: 1fr;
+}
+.section-d {
+  display: grid;
+  background-color: #efe2ba;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: [title] 120px [intro] 40px[intro] 40px [image] 250px[end];
+  grid-template-columns: 1fr;
+}
+
+.title {
+  display: inline-grid;
+  font-size: 40px;
+  padding: 0;
+  justify-items: center;
+}
+
+.image {
+  display: inline-grid;
+  height: 95;
+  width: auto;
+  justify-items: center;
+}
+
+.intro {
+  display: inline-grid;
+  font-size: 21px;
+  justify-items: center;
+}

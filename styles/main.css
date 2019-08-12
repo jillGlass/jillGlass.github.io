@@ -44,7 +44,7 @@ ol {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh;
+
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -53,7 +53,7 @@ ol {
   background-color: #f78888;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] auto [end];
+  grid-template-rows: [title] 110px [intro] 30px [image] 210px [space] auto [end];
 }
 
 .column-2 {
@@ -61,7 +61,7 @@ ol {
   background-color: #90ccf4;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] auto [end];
+  grid-template-rows: [title] 110px [intro] 30px [image] 210px [space] auto [end];
 }
 
 .column-3 {
@@ -69,11 +69,11 @@ ol {
   background-color: #f3d250;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [into] 30px [image] 210px [space] auto [end];
+  grid-template-rows: [title] 110px [intro] 30px [image] 210px [space] auto [end];
 }
 
 .title {
-  display: inline;
+  display: inline-grid;
   font-size: 3.5em;
   padding: 0;
   justify-items: center;
@@ -81,8 +81,6 @@ ol {
 
 .image {
   display: inline-grid;
-  height: 95;
-  width: auto;
   justify-items: center;
 }
 
@@ -91,7 +89,45 @@ ol {
   font-size: 1em;
   justify-items: center;
 }
+@media screen and (min-width: 775px) {
+  .container {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-@media (max-width: 100px) {
-  /* CSS Rules */
+@media screen and (max-width: 775px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .column-1 {
+    display: grid;
+    background-color: #f78888;
+    align-items: center;
+    justify-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .column-2 {
+    display: grid;
+    background-color: #90ccf4;
+    align-items: center;
+    justify-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .column-3 {
+    display: grid;
+    background-color: #f3d250;
+    align-items: center;
+    justify-items: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
