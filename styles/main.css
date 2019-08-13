@@ -20,9 +20,8 @@ ol {
   color: black;
   float: left;
   text-align: center;
-  padding: 20px 60px;
+  padding: 25px 20px;
   text-decoration: none;
-  font-size: 20px;
 }
 
 .navigation a.active {
@@ -36,10 +35,12 @@ ol {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Yellowtail", cursive;
+  font-size: 32px;
 }
 
 .nav-right a {
   float: right;
+  font-size: 18px;
 }
 
 .container {
