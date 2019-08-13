@@ -42,7 +42,11 @@ ol {
   float: right;
   font-size: 18px;
 }
-
+#burger {
+  float: right;
+  padding: 25px 10px;
+  height: 48px;
+}
 .container {
   display: grid;
 
@@ -54,7 +58,7 @@ ol {
   background-color: #f78888;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [intro] 30px [image] 210px [space] auto [end];
+  grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
 }
 
 .column-2 {
@@ -62,7 +66,7 @@ ol {
   background-color: #90ccf4;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [intro] 30px [image] 210px [space] auto [end];
+  grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
 }
 
 .column-3 {
@@ -70,7 +74,7 @@ ol {
   background-color: #f3d250;
   align-items: center;
   justify-items: center;
-  grid-template-rows: [title] 110px [intro] 30px [image] 210px [space] auto [end];
+  grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
 }
 
 .title {
