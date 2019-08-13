@@ -91,7 +91,7 @@ ol {
 
 .intro {
   display: inline-grid;
-  font-size: 1em;
+  font-size: 1.1em;
   justify-items: center;
 }
 @media screen and (min-width: 775px) {
