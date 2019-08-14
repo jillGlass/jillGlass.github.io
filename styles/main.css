@@ -8,6 +8,16 @@ ol {
   margin: 0;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .navigation {
   position: relative;
   overflow: hidden;
@@ -159,7 +169,7 @@ section {
 .showcase-entry {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 65% 35%;
+
   border: 2px solid black;
   height: auto;
   cursor: pointer;
@@ -226,4 +236,14 @@ section {
   margin-bottom: 0;
   font-size: 1.3em;
   height: auto;
+}
+
+@media screen and (min-width: 775px) {
+  .standard-entry {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border: 2px solid black;
+    height: auto;
+    cursor: pointer;
+  }
 }
