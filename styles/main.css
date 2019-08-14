@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  
 }
 
 ul,
@@ -22,6 +23,7 @@ ol {
   text-align: center;
   padding: 25px 20px;
   text-decoration: none;
+  
 }
 
 .navigation a.active {
@@ -36,6 +38,7 @@ ol {
   transform: translate(-50%, -50%);
   font-family: "Yellowtail", cursive;
   font-size: 32px;
+  cursor:pointer;
 }
 
 .nav-right a {
@@ -46,10 +49,11 @@ ol {
   float: right;
   padding: 25px 10px;
   height: 48px;
+  cursor:pointer;
 }
 .container {
   display: grid;
-
+  cursor:pointer;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
