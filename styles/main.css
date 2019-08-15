@@ -71,7 +71,6 @@ a:visited {
   align-items: center;
   justify-items: center;
   grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
-  width: 100%;
 }
 
 .column-2 {
@@ -80,7 +79,6 @@ a:visited {
   align-items: center;
   justify-items: center;
   grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
-  width: 100%;
 }
 
 .column-3 {
@@ -89,7 +87,6 @@ a:visited {
   align-items: center;
   justify-items: center;
   grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
-  width: 100%;
 }
 
 .title {
