@@ -1,5 +1,7 @@
 body {
   margin: 0;
+
+  font-family: "Raleway", sans-serif;
 }
 
 ul,
@@ -16,6 +18,7 @@ a:link {
 a:visited {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .navigation {
@@ -35,7 +38,14 @@ a:visited {
 }
 
 .navigation a.active {
-  font-weight: bold;
+  background-color: rgb(194, 186, 186);
+  padding-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
 }
 
 .nav-center {
@@ -44,7 +54,6 @@ a:visited {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Yellowtail", cursive;
   font-size: 32px;
   cursor: pointer;
 }
@@ -67,7 +76,7 @@ a:visited {
 
 .column-1 {
   display: grid;
-  background-color: #f78888;
+  background-color: #edc7b7;
   align-items: center;
   justify-items: center;
   grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
@@ -75,7 +84,7 @@ a:visited {
 
 .column-2 {
   display: grid;
-  background-color: #90ccf4;
+  background-color: #eee2dc;
   align-items: center;
   justify-items: center;
   grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
@@ -83,7 +92,7 @@ a:visited {
 
 .column-3 {
   display: grid;
-  background-color: #f3d250;
+  background-color: #bab2b5;
   align-items: center;
   justify-items: center;
   grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
@@ -119,12 +128,13 @@ a:visited {
   body {
     margin: 0;
   }
+
   .container {
     grid-template-columns: 1fr;
   }
   .column-1 {
     display: grid;
-    background-color: #f78888;
+    background-color: #edc7b7;
     align-items: center;
     justify-items: center;
     grid-row-start: 1;
@@ -133,7 +143,7 @@ a:visited {
 
   .column-2 {
     display: grid;
-    background-color: #90ccf4;
+    background-color: #eee2dc;
     align-items: center;
     justify-items: center;
     grid-row-start: 2;
@@ -142,7 +152,7 @@ a:visited {
 
   .column-3 {
     display: grid;
-    background-color: #f3d250;
+    background-color: #bab2b5;
     align-items: center;
     justify-items: center;
     grid-row-start: 3;
@@ -152,68 +162,18 @@ a:visited {
 
 /*Blog Page*/
 
-section {
-  font-family: "PT Serif", serif;
-}
-
 .container-blog {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
-  padding: 1em;
-  background-color: #f78888;
+  padding: 1em 3em 100vh 3em;
+  background-color: #edc7b7;
 }
 
-/*Showcase entry*/
-
-.showcase-entry {
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 2px solid black;
-  height: auto;
-  cursor: pointer;
-  width: 100%;
-}
-
-.showcase-image {
-  display: inline-grid;
-  justify-items: center;
-  align-items: center;
-  padding-top: 0.8em;
-  padding-bottom: 1em;
-  height: auto;
-}
-
-.showcase-title {
-  display: inline-grid;
-  font-size: 1.4em;
-  align-items: center;
-  justify-items: left;
-  padding: 0.8em;
-  margin-top: 0;
-  margin-bottom: 0;
-  height: auto;
-}
-
-.tech-skills {
-  background-color: #90ccf4;
-}
-.soft-skills {
-  background-color: #f3d250;
-}
-
-.tech-image {
-  background-color: white;
-}
-.soft-skills-image {
-  background-color: white;
-}
-
-/*standard entry*/
 .standard-entry {
   display: grid;
   grid-template-columns: 40% 60%;
-  border: 2px solid black;
+  border-top: 0.1em black dashed;
   height: auto;
   cursor: pointer;
 }
@@ -222,8 +182,7 @@ section {
   display: inline-grid;
   justify-items: center;
   align-items: center;
-  padding-top: 0.8em;
-  padding-bottom: 1em;
+  padding: 1.1em 0.5em 1.1em 0.5em;
   height: auto;
 }
 
@@ -231,7 +190,7 @@ section {
   display: inline-grid;
   justify-items: left;
   align-items: center;
-  padding: 0.8em;
+  padding: 1.2em 0em 1.2em 1.2em;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.3em;
@@ -242,26 +201,39 @@ section {
   .standard-entry {
     display: grid;
     grid-template-columns: 25% 75%;
-    border: 2px solid black;
+
     height: auto;
     cursor: pointer;
   }
 }
 
 /* blog entry */
-.container-blog-article {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-  padding: 1em;
-  background-color: #f78888;
-  cursor: default;
+.blog-entry-container {
+  display: inline-grid;
+
+  padding-right: 1em;
+  font-size: 1em;
+  margin: 0;
 }
 
-.blog-entry-container {
-  background-color: white;
+.blog-entry-title {
+  border-top: 0.1em black dashed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  justify-items: left;
+  align-items: center;
   margin: 0;
-  padding: 0.8em;
-  line-height: 1.4;
-  cursor: default;
+  font-size: 1.3em;
+}
+
+/* about */
+
+.about-background {
+  background-color: #bab2b5;
+}
+
+/* work */
+
+.work-background {
+  background-color: #eee2dc;
 }

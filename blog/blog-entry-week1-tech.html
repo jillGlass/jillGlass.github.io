@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jill Glass Web Development - Blog - Week1 Tech</title>
+    <title>Jill Glass Web Development - Blog</title>
     <meta name="description" content="Website developer in training at Dev
     Academy (EDA) in Auckland. Graduating December 2019.>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Work+Sans:600&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap"
       rel="stylesheet"
     />
+
     <link
-      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -26,68 +24,80 @@
       <ul class="navigation">
         <div class="nav-center">
           <li>
-            <a href="../index.html" class="active"
-              ><strong>Jill Glass</strong></a
-            >
+            
           </li>
         </div>
         <div class="nav-right">
-          <li>
-            <img
-              src="../images/menuIcon.svg"
-              id="burger"
-              alt="menu"
-              width="50"
-            />
-          </li>
+          <li><a href="../index.html" class="burger">Home</a></li>
+          <li><a href="../About/about.html" class="burger">About</a></li>
+          <li><a href="../Work/work.html" class="burger">Work</a></li>
+          <li><a href="/blog/blog-index.html" class="burger">Blog</a></li>
         </div>
       </ul>
     </nav>
-    <div class="container-blog-article">
-      <header class="title"><a href="blog-index.html">Blog</a></header>
+    <div class="container-blog">
+      <header class="title">
+        <img src="../images/blogfancy.svg" alt="blog icon" height="130" />
+      </header>
 
-      <section class="showcase-entry">
-        <div class="showcase-image tech-image">
-          <img src="../images/positioning.svg" alt="blog icon" width="200" />
-        </div>
-
-        <h2 class="showcase-title tech-skills">
-          What are the differences between relative, absolute, and fixed
-          positioning?
-        </h2>
+      
+        <h3 class="blog-entry-title">
+          The differences between absolute, fixed and relative positioning
+        </h3>
         <p class="blog-entry-container">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo
-          metus, vestibulum eleifend mollis non, congue ac ligula. Pellentesque
-          eu neque erat. Sed porta leo massa. Curabitur finibus a erat hendrerit
-          vehicula. Proin blandit lectus aliquam lacus gravida, sit amet
-          bibendum tellus dignissim. Ut eget sapien aliquam, posuere magna ut,
-          sagittis mauris. Aenean vitae gravida neque, at tincidunt est. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Pellentesque blandit augue et nunc auctor, eu
-          porta velit gravida. Aenean et orci diam. Aliquam congue leo quis
-          dolor gravida sodales. Pellentesque lectus purus, hendrerit nec
-          accumsan ac, rutrum a dolor. Sed venenatis et urna et semper. Nam quis
-          neque hendrerit, imperdiet nisi id, euismod eros. Donec neque sapien,
-          consequat accumsan libero quis, sollicitudin dignissim velit. Orci
-          varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Pellentesque sollicitudin quis leo vitae aliquet. Donec
-          eget tellus purus. Aenean non erat dui. Curabitur dapibus nulla
-          libero. Praesent imperdiet tortor non dui lobortis, eget rutrum dolor
-          consequat. In tempus libero at quam eleifend, et aliquam odio gravida.
-          Sed laoreet est quis porttitor ullamcorper. Donec interdum nisi sed
-          maximus placerat. Phasellus commodo tincidunt vulputate. Morbi pretium
-          risus nec placerat rutrum. Vestibulum nulla augue, condimentum ut
-          risus ultricies, iaculis eleifend mi. Suspendisse potenti. Vestibulum
-          commodo gravida lorem, a finibus velit eleifend in. Curabitur blandit
-          at sapien non pulvinar. Nulla eu mi tempor, porttitor ligula a, cursus
-          velit. Vestibulum eu vehicula sapien. Nam elementum sapien sit amet
-          purus mollis ornare sit amet sit amet purus. Etiam commodo eros ac
-          dignissim tempor. Morbi eu posuere elit. Pellentesque vel mauris
-          turpis. Morbi viverra vehicula varius. Phasellus vitae faucibus
-          libero, in facilisis diam. Nunc sed ipsum id lorem semper efficitur.
-          In dictum augue ac tempus efficitur. Aliquam fermentum eros lacus,
-          mattis sagittis nisi convallis a. Vivamus eget commodo nunc. In
-          euismod suscipit ipsum, vitae pretium nisi molestie at.
+          Relative, Absolute and Fixed are ways in which you can position elements on a web page using CSS.  It allows you to place elements, such as images, where you want them.
+Webpages are made up of rectangular containers.  If you imagine that each webpage is all blocks of text and images placed in rectangles, you can see that you will want to tell these rectangles where to sit on the page.  This is where the property of ‘position’ comes in.  Using CSS, you can use the position property and the values of ‘relative’, ‘absolute’ and ‘fixed’ to tell the rectangles where to sit. There are other ways in which you can do this using other properties and values however here I will only cover positioning.
+Examples of this code are seen below. You can only use one of these positions at a time.</p>
+
+
+          <img
+            src="../images/Blog-W2-tech-positionExample.PNG"
+            alt="code for positioning elements"
+            width="250"
+          />
+
+          <h3 class="blog-entry-title">Relative</h3>
+          <p class="blog-entry-container">
+If you use relative positioning by itself, with no measurements given, nothing will happen.  You can’t use ‘position: relative;’ alone, it needs to be paired with an instruction stating where the element should sit ‘relative’ to itself. You can use ‘top’, ‘left’, ‘bottom’ and ‘right’ as instructions (attributes) to guide where the element should be placed, along with a measurement of how far you want the element to move from itself/its current place.  Once the element is moved, no other elements on the page will move to fill the gap that has been left.
+</p>
+
+          <img
+            src="../images/Blog-W2-tech-positionExample-relative.PNG"
+            alt="realative positioning code"
+            width="250"
+          />
+          <img
+          src="../images/Blog-W2-tech-positionExample-relative2.PNG"
+          alt="example of relative positioning"
+          width="250"
+        />
+          <h3 class="blog-entry-title">Absolute</h3>
+          <p class="blog-entry-container">
+Absolute positioning allows you to move an element relative to its parent element. If there is no parent element it will be positioned relative to the ‘body’ of the html page. As per the position of relative, you can use ‘top’, ‘left’, ‘bottom’ and ‘right’ as attributes for the positioning of the element.  </p>
+
+          
+          <img
+            src="../images/Blog-W2-tech-positionExample-absolute.PNG"
+            alt="absolute positioning code"
+            width="250" />
+            <img
+            src="../images/Blog-W2-tech-positionExample-absolute2.PNG"
+            alt="example of absolute positioning"
+            width="250" />
+            
+            <h3 class="blog-entry-title">Fixed</h3>
+            <p class="blog-entry-container">
+Fixed positioning is fixed in place relative to the viewport (the browser window).  It allows you to take an element and make it static on the page, in other words, to fix it in one place and not have it move even when a user scrolls.  An example of this would be a navigation bar.  When a user scrolls further down the page the nav bar stays in one place while the rest of the page content moves. </p>
+
+<img
+            src="../images/Blog-W2-tech-positionExample-fixed.PNG"
+            alt="fixed positioning code"
+            width="250" />
+            <img
+            src="../images/Blog-W2-tech-positionExample-fixed2.PNG"
+            alt="example of fixed positioning"
+            width="250" />
+
         </p>
       </section>
     </div>
