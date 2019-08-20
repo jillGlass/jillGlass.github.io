@@ -226,6 +226,14 @@ a:visited {
   margin: 0;
   font-size: 1.3em;
 }
+.blog-sub-title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  justify-items: left;
+  align-items: center;
+  margin: 0;
+  font-size: 1em;
+}
 
 /* about */
 
